@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C25011C1999B97C00D830B6 /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C25011E1999B97C00D830B6 /* Application.xib */; };
 		5C37CD421999B1C00059D663 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C534D15174CEBA7006A2B7B /* AppDelegate.m */; };
 		5C37CD431999B1C20059D663 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C534D24174CEC9F006A2B7B /* AppController.m */; };
 		5C37CD441999B1C50059D663 /* CFSmpteFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8019D71999998A004F84CC /* CFSmpteFormatter.m */; };
 		5C37CD451999B1C90059D663 /* CFSmpteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8019DB1999A22A004F84CC /* CFSmpteTextField.m */; };
 		5C37CD461999B1CE0059D663 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C534D0E174CEBA7006A2B7B /* main.m */; };
-		5C37CD8B1999B5990059D663 /* Main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C37CD8D1999B5990059D663 /* Main.xib */; };
 		5C534D03174CEBA6006A2B7B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C534D02174CEBA6006A2B7B /* Cocoa.framework */; };
 		5C534D0D174CEBA6006A2B7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C534D0B174CEBA6006A2B7B /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C37CD8C1999B5990059D663 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Main.xib; sourceTree = "<group>"; };
+		5C25011D1999B97C00D830B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Application.xib; sourceTree = "<group>"; };
 		5C534CFF174CEBA6006A2B7B /* SmpteFormatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmpteFormatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C534D02174CEBA6006A2B7B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5C534D05174CEBA6006A2B7B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -97,7 +97,7 @@
 				5C534D15174CEBA7006A2B7B /* AppDelegate.m */,
 				5C534D23174CEC9F006A2B7B /* AppController.h */,
 				5C534D24174CEC9F006A2B7B /* AppController.m */,
-				5C37CD8D1999B5990059D663 /* Main.xib */,
+				5C25011E1999B97C00D830B6 /* Application.xib */,
 				5C8019D51999995B004F84CC /* SmpteFormatter */,
 				5C8019D91999A200004F84CC /* SmpteTextField */,
 				5C534D09174CEBA6006A2B7B /* Supporting Files */,
@@ -186,8 +186,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C25011C1999B97C00D830B6 /* Application.xib in Resources */,
 				5C534D0D174CEBA6006A2B7B /* InfoPlist.strings in Resources */,
-				5C37CD8B1999B5990059D663 /* Main.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,12 +209,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5C37CD8D1999B5990059D663 /* Main.xib */ = {
+		5C25011E1999B97C00D830B6 /* Application.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5C37CD8C1999B5990059D663 /* en */,
+				5C25011D1999B97C00D830B6 /* en */,
 			);
-			name = Main.xib;
+			name = Application.xib;
 			path = Source;
 			sourceTree = SOURCE_ROOT;
 		};

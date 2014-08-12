@@ -10,6 +10,7 @@
  \version	2.0
  \date		Created: 2013/05/19
             Updated: 2014/08/11
+ \copyright	Copyright (C) 2013  Christian Floisand
  
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
