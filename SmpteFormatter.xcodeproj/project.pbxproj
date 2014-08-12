@@ -24,7 +24,7 @@
 		5C534D05174CEBA6006A2B7B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		5C534D06174CEBA6006A2B7B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		5C534D07174CEBA6006A2B7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		5C534D0A174CEBA6006A2B7B /* SmpteFormatter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "SmpteFormatter-Info.plist"; path = "Source/SmpteFormatter-Info.plist"; sourceTree = "<group>"; };
+		5C534D0A174CEBA6006A2B7B /* SmpteFormatter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SmpteFormatter-Info.plist"; path = "Source/SmpteFormatter-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5C534D0C174CEBA6006A2B7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C534D0E174CEBA7006A2B7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = SOURCE_ROOT; };
 		5C534D10174CEBA7006A2B7B /* SmpteFormatter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SmpteFormatter-Prefix.pch"; path = "Source/SmpteFormatter-Prefix.pch"; sourceTree = "<group>"; };
