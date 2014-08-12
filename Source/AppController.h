@@ -1,13 +1,13 @@
 /*!
  
- \file		AppDelegate.m
- \brief		Application delegate.
- \details   Delegate for the main window nib.
+ \file		AppController.h
+ \brief		Application controller.
+ \details   Handles all UI interaction with the main window.
  
  \author	Christian Floisand
  \version	1.0
  \date		Created: 2013/05/22
-            Updated: 2013/05/22
+            Updated: 2014/08/11
  \copyright	Copyright (C) 2013  Christian Floisand
  
  This program is free software: you can redistribute it and/or modify
@@ -26,16 +26,15 @@
  */
 
 
-#import "AppDelegate.h"
+#import <Foundation/Foundation.h>
 
 
-@implementation AppDelegate
+@class CFSmpteTextField;
 
+@interface AppController : NSObject
 
-- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
-{
-    return YES;
-}
-
+@property (nonatomic, weak) IBOutlet CFSmpteTextField *timeCode1Field;
+@property (nonatomic, weak) IBOutlet CFSmpteTextField *timeCode2Field;
+@property (nonatomic, weak) IBOutlet NSButton *dropFrameCheckbox;
 
 @end

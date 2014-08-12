@@ -27,7 +27,7 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2013 Rainland Audio. All rights reserved.</string>
 	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
+	<string>Main.xib</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>

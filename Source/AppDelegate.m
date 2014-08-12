@@ -1,8 +1,8 @@
 /*!
  
- \file		AppController.h
- \brief		Application controller.
- \details   Handles all UI interaction with the main window.
+ \file		AppDelegate.m
+ \brief		Application delegate.
+ \details   Delegate for the main window nib.
  
  \author	Christian Floisand
  \version	1.0
@@ -26,17 +26,14 @@
  */
 
 
-#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
 
 
-@interface AppController : NSObject
+@implementation AppDelegate
 
-
-@property (assign) IBOutlet NSTextField *timeCode1Field;
-@property (assign) IBOutlet NSTextField *timeCode2Field;
-@property (assign) IBOutlet NSButton    *dropFrameCheckbox;
-
-- (IBAction)dropFrameCheckboxClicked:(id)sender;
-
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
+{
+    return YES;
+}
 
 @end

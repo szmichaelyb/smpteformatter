@@ -7,35 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C37CD421999B1C00059D663 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C534D15174CEBA7006A2B7B /* AppDelegate.m */; };
+		5C37CD431999B1C20059D663 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C534D24174CEC9F006A2B7B /* AppController.m */; };
+		5C37CD441999B1C50059D663 /* CFSmpteFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8019D71999998A004F84CC /* CFSmpteFormatter.m */; };
+		5C37CD451999B1C90059D663 /* CFSmpteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8019DB1999A22A004F84CC /* CFSmpteTextField.m */; };
+		5C37CD461999B1CE0059D663 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C534D0E174CEBA7006A2B7B /* main.m */; };
+		5C37CD8B1999B5990059D663 /* Main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C37CD8D1999B5990059D663 /* Main.xib */; };
 		5C534D03174CEBA6006A2B7B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C534D02174CEBA6006A2B7B /* Cocoa.framework */; };
 		5C534D0D174CEBA6006A2B7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C534D0B174CEBA6006A2B7B /* InfoPlist.strings */; };
-		5C534D0F174CEBA7006A2B7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C534D0E174CEBA7006A2B7B /* main.m */; };
-		5C534D13174CEBA7006A2B7B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5C534D11174CEBA7006A2B7B /* Credits.rtf */; };
-		5C534D16174CEBA7006A2B7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C534D15174CEBA7006A2B7B /* AppDelegate.m */; };
-		5C534D19174CEBA7006A2B7B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C534D17174CEBA7006A2B7B /* MainMenu.xib */; };
-		5C534D21174CEC44006A2B7B /* SmpteFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C534D1F174CEC44006A2B7B /* SmpteFormatter.m */; };
-		5C534D22174CEC44006A2B7B /* SmpteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C534D20174CEC44006A2B7B /* SmpteTextField.m */; };
-		5C534D25174CEC9F006A2B7B /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C534D24174CEC9F006A2B7B /* AppController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C37CD8C1999B5990059D663 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Main.xib; sourceTree = "<group>"; };
 		5C534CFF174CEBA6006A2B7B /* SmpteFormatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmpteFormatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C534D02174CEBA6006A2B7B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5C534D05174CEBA6006A2B7B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		5C534D06174CEBA6006A2B7B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		5C534D07174CEBA6006A2B7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		5C534D0A174CEBA6006A2B7B /* SmpteFormatter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmpteFormatter-Info.plist"; sourceTree = "<group>"; };
+		5C534D0A174CEBA6006A2B7B /* SmpteFormatter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "SmpteFormatter-Info.plist"; path = "Source/SmpteFormatter-Info.plist"; sourceTree = "<group>"; };
 		5C534D0C174CEBA6006A2B7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5C534D0E174CEBA7006A2B7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5C534D10174CEBA7006A2B7B /* SmpteFormatter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmpteFormatter-Prefix.pch"; sourceTree = "<group>"; };
-		5C534D12174CEBA7006A2B7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		5C534D14174CEBA7006A2B7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5C534D15174CEBA7006A2B7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5C534D18174CEBA7006A2B7B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		5C534D1F174CEC44006A2B7B /* SmpteFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmpteFormatter.m; sourceTree = "<group>"; };
-		5C534D20174CEC44006A2B7B /* SmpteTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmpteTextField.m; sourceTree = "<group>"; };
-		5C534D23174CEC9F006A2B7B /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
-		5C534D24174CEC9F006A2B7B /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		5C534D0E174CEBA7006A2B7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = SOURCE_ROOT; };
+		5C534D10174CEBA7006A2B7B /* SmpteFormatter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SmpteFormatter-Prefix.pch"; path = "Source/SmpteFormatter-Prefix.pch"; sourceTree = "<group>"; };
+		5C534D14174CEBA7006A2B7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Source/AppDelegate.h; sourceTree = "<group>"; };
+		5C534D15174CEBA7006A2B7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Source/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		5C534D23174CEC9F006A2B7B /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = Source/AppController.h; sourceTree = "<group>"; };
+		5C534D24174CEC9F006A2B7B /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = Source/AppController.m; sourceTree = SOURCE_ROOT; };
+		5C8019D61999998A004F84CC /* CFSmpteFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFSmpteFormatter.h; path = Source/CFSmpteFormatter/CFSmpteFormatter.h; sourceTree = SOURCE_ROOT; };
+		5C8019D71999998A004F84CC /* CFSmpteFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CFSmpteFormatter.m; path = Source/CFSmpteFormatter/CFSmpteFormatter.m; sourceTree = SOURCE_ROOT; };
+		5C8019DA1999A22A004F84CC /* CFSmpteTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFSmpteTextField.h; path = Source/CFSmpteTextField/CFSmpteTextField.h; sourceTree = SOURCE_ROOT; };
+		5C8019DB1999A22A004F84CC /* CFSmpteTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CFSmpteTextField.m; path = Source/CFSmpteTextField/CFSmpteTextField.m; sourceTree = SOURCE_ROOT; };
 		5CA55C74174D01FA0044E483 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5CA55C75174D02EC0044E483 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,7 +57,7 @@
 			children = (
 				5CA55C75174D02EC0044E483 /* README.md */,
 				5CA55C74174D01FA0044E483 /* .gitignore */,
-				5C534D08174CEBA6006A2B7B /* SmpteFormatter */,
+				5C534D08174CEBA6006A2B7B /* Source */,
 				5C534D01174CEBA6006A2B7B /* Frameworks */,
 				5C534D00174CEBA6006A2B7B /* Products */,
 			);
@@ -90,18 +90,19 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		5C534D08174CEBA6006A2B7B /* SmpteFormatter */ = {
+		5C534D08174CEBA6006A2B7B /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				5C534D14174CEBA7006A2B7B /* AppDelegate.h */,
 				5C534D15174CEBA7006A2B7B /* AppDelegate.m */,
 				5C534D23174CEC9F006A2B7B /* AppController.h */,
 				5C534D24174CEC9F006A2B7B /* AppController.m */,
-				5C534D1F174CEC44006A2B7B /* SmpteFormatter.m */,
-				5C534D20174CEC44006A2B7B /* SmpteTextField.m */,
-				5C534D17174CEBA7006A2B7B /* MainMenu.xib */,
+				5C37CD8D1999B5990059D663 /* Main.xib */,
+				5C8019D51999995B004F84CC /* SmpteFormatter */,
+				5C8019D91999A200004F84CC /* SmpteTextField */,
 				5C534D09174CEBA6006A2B7B /* Supporting Files */,
 			);
+			name = Source;
 			path = SmpteFormatter;
 			sourceTree = "<group>";
 		};
@@ -112,9 +113,26 @@
 				5C534D0B174CEBA6006A2B7B /* InfoPlist.strings */,
 				5C534D0E174CEBA7006A2B7B /* main.m */,
 				5C534D10174CEBA7006A2B7B /* SmpteFormatter-Prefix.pch */,
-				5C534D11174CEBA7006A2B7B /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C8019D51999995B004F84CC /* SmpteFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				5C8019D61999998A004F84CC /* CFSmpteFormatter.h */,
+				5C8019D71999998A004F84CC /* CFSmpteFormatter.m */,
+			);
+			name = SmpteFormatter;
+			sourceTree = "<group>";
+		};
+		5C8019D91999A200004F84CC /* SmpteTextField */ = {
+			isa = PBXGroup;
+			children = (
+				5C8019DA1999A22A004F84CC /* CFSmpteTextField.h */,
+				5C8019DB1999A22A004F84CC /* CFSmpteTextField.m */,
+			);
+			name = SmpteTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +161,7 @@
 		5C534CF7174CEBA6006A2B7B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Rainland Audio";
 			};
 			buildConfigurationList = 5C534CFA174CEBA6006A2B7B /* Build configuration list for PBXProject "SmpteFormatter" */;
@@ -169,8 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C534D0D174CEBA6006A2B7B /* InfoPlist.strings in Resources */,
-				5C534D13174CEBA7006A2B7B /* Credits.rtf in Resources */,
-				5C534D19174CEBA7006A2B7B /* MainMenu.xib in Resources */,
+				5C37CD8B1999B5990059D663 /* Main.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,40 +198,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C534D0F174CEBA7006A2B7B /* main.m in Sources */,
-				5C534D16174CEBA7006A2B7B /* AppDelegate.m in Sources */,
-				5C534D21174CEC44006A2B7B /* SmpteFormatter.m in Sources */,
-				5C534D22174CEC44006A2B7B /* SmpteTextField.m in Sources */,
-				5C534D25174CEC9F006A2B7B /* AppController.m in Sources */,
+				5C37CD461999B1CE0059D663 /* main.m in Sources */,
+				5C37CD421999B1C00059D663 /* AppDelegate.m in Sources */,
+				5C37CD431999B1C20059D663 /* AppController.m in Sources */,
+				5C37CD441999B1C50059D663 /* CFSmpteFormatter.m in Sources */,
+				5C37CD451999B1C90059D663 /* CFSmpteTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		5C37CD8D1999B5990059D663 /* Main.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C37CD8C1999B5990059D663 /* en */,
+			);
+			name = Main.xib;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
+		};
 		5C534D0B174CEBA6006A2B7B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5C534D0C174CEBA6006A2B7B /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5C534D11174CEBA7006A2B7B /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C534D12174CEBA7006A2B7B /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		5C534D17174CEBA7006A2B7B /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C534D18174CEBA7006A2B7B /* en */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
@@ -223,7 +234,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -256,7 +266,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -283,8 +292,8 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SmpteFormatter/SmpteFormatter-Prefix.pch";
-				INFOPLIST_FILE = "SmpteFormatter/SmpteFormatter-Info.plist";
+				GCC_PREFIX_HEADER = "Source/SmpteFormatter-Prefix.pch";
+				INFOPLIST_FILE = "Source/SmpteFormatter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -295,8 +304,8 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SmpteFormatter/SmpteFormatter-Prefix.pch";
-				INFOPLIST_FILE = "SmpteFormatter/SmpteFormatter-Info.plist";
+				GCC_PREFIX_HEADER = "Source/SmpteFormatter-Prefix.pch";
+				INFOPLIST_FILE = "Source/SmpteFormatter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
