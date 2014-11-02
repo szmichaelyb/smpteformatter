@@ -1,14 +1,12 @@
 /*!
  
- \file		AppDelegate.m
- \brief		Application delegate.
- \details   Delegate for the main window nib.
+ \file		Common.h
+ \brief		Common strings for the demo app.
  
  \author	Christian Floisand
- \version	1.0
- \date		Created: 2013/05/22
+ \date		Created: 2014/11/02
             Updated: 2014/11/02
- \copyright	Copyright (C) 2013  Christian Floisand
+ \copyright	Copyright (C) 2014  Christian Floisand
  
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -25,14 +23,7 @@
  
  */
 
+#import <Foundation/Foundation.h>
 
-#import "AppDelegate.h"
 
-
-@implementation AppDelegate
-
-- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
-    return YES;
-}
-
-@end
+extern NSString *const CFCheckboxStateKeyPath;

@@ -7,7 +7,7 @@
  \author	Christian Floisand
  \version	1.0
  \date		Created: 2013/05/22
-            Updated: 2014/08/11
+            Updated: 2014/11/02
  \copyright	Copyright (C) 2013  Christian Floisand
  
  This program is free software: you can redistribute it and/or modify

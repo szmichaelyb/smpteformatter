@@ -14,7 +14,7 @@
  \author	Christian Floisand
  \version	1.0
  \date		Created: 2013/05/19
-            Updated: 2014/08/11
+            Updated: 2014/11/02
  \copyright	Copyright (C) 2013  Christian Floisand
  
  This program is free software: you can redistribute it and/or modify
@@ -37,9 +37,7 @@
 
 
 @interface CFSmpteTextField ()
-{
-    NSString *_lastValue;
-}
+@property (nonatomic, strong) NSString *lastValue;
 @end
 
 @implementation CFSmpteTextField
@@ -82,7 +80,7 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
-    if ( ! [keyPath isEqualToString:@"cell.state"] ) {
+    if ( ! [keyPath isEqualToString:CFCheckboxStateKeyPath] ) {
         return;
     }
     

@@ -15,6 +15,7 @@
 		5C37CD461999B1CE0059D663 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C534D0E174CEBA7006A2B7B /* main.m */; };
 		5C534D03174CEBA6006A2B7B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C534D02174CEBA6006A2B7B /* Cocoa.framework */; };
 		5C534D0D174CEBA6006A2B7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C534D0B174CEBA6006A2B7B /* InfoPlist.strings */; };
+		5C95EAF01A06D9E200B65B5B /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C95EAEF1A06D9E200B65B5B /* Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		5C8019D71999998A004F84CC /* CFSmpteFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CFSmpteFormatter.m; path = Source/CFSmpteFormatter/CFSmpteFormatter.m; sourceTree = SOURCE_ROOT; };
 		5C8019DA1999A22A004F84CC /* CFSmpteTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFSmpteTextField.h; path = Source/CFSmpteTextField/CFSmpteTextField.h; sourceTree = SOURCE_ROOT; };
 		5C8019DB1999A22A004F84CC /* CFSmpteTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CFSmpteTextField.m; path = Source/CFSmpteTextField/CFSmpteTextField.m; sourceTree = SOURCE_ROOT; };
+		5C95EAEF1A06D9E200B65B5B /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Common.m; path = Source/Common.m; sourceTree = SOURCE_ROOT; };
+		5C95EAF11A06DA3500B65B5B /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Common.h; path = Source/Common.h; sourceTree = SOURCE_ROOT; };
 		5CA55C74174D01FA0044E483 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5CA55C75174D02EC0044E483 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +104,8 @@
 				5C8019D51999995B004F84CC /* SmpteFormatter */,
 				5C8019D91999A200004F84CC /* SmpteTextField */,
 				5C534D09174CEBA6006A2B7B /* Supporting Files */,
+				5C95EAF11A06DA3500B65B5B /* Common.h */,
+				5C95EAEF1A06D9E200B65B5B /* Common.m */,
 			);
 			name = Source;
 			path = SmpteFormatter;
@@ -198,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C95EAF01A06D9E200B65B5B /* Common.m in Sources */,
 				5C37CD461999B1CE0059D663 /* main.m in Sources */,
 				5C37CD421999B1C00059D663 /* AppDelegate.m in Sources */,
 				5C37CD431999B1C20059D663 /* AppController.m in Sources */,

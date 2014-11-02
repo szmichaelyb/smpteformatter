@@ -7,7 +7,7 @@
  \author	Christian Floisand
  \version	1.0
  \date		Created: 2013/05/22
-            Updated: 2014/08/11
+            Updated: 2014/11/02
  \copyright	Copyright (C) 2013  Christian Floisand
  
  This program is free software: you can redistribute it and/or modify
@@ -30,9 +30,6 @@
 #import "CFSmpteTextField/CFSmpteTextField.h"
 
 
-// The KVO key-path is the NSButton's NSCell state property.
-static NSString *const CheckboxStateKeyPath = @"cell.state";
-
 @interface AppController ()
 
 @end
@@ -46,19 +43,19 @@ static NSString *const CheckboxStateKeyPath = @"cell.state";
     [self.dropFrameCheckbox setState:NSOffState];
     
     [self.dropFrameCheckbox addObserver:self.timeCode1Field
-                             forKeyPath:CheckboxStateKeyPath
+                             forKeyPath:CFCheckboxStateKeyPath
                                 options:NSKeyValueObservingOptionInitial | NSKeyValueObservingOptionNew
                                 context:nil];
     [self.dropFrameCheckbox addObserver:self.timeCode2Field
-                             forKeyPath:CheckboxStateKeyPath
+                             forKeyPath:CFCheckboxStateKeyPath
                                 options:NSKeyValueObservingOptionInitial | NSKeyValueObservingOptionNew
                                 context:nil];
 }
 
 - (void)dealloc
 {
-    [self.dropFrameCheckbox removeObserver:self.timeCode1Field forKeyPath:CheckboxStateKeyPath context:nil];
-    [self.dropFrameCheckbox removeObserver:self.timeCode2Field forKeyPath:CheckboxStateKeyPath context:nil];
+    [self.dropFrameCheckbox removeObserver:self.timeCode1Field forKeyPath:CFCheckboxStateKeyPath context:nil];
+    [self.dropFrameCheckbox removeObserver:self.timeCode2Field forKeyPath:CFCheckboxStateKeyPath context:nil];
 }
 
 @end
