@@ -9,7 +9,7 @@
  \author	Christian Floisand
  \version	2.0
  \date		Created: 2013/05/19
-            Updated: 2014/08/11
+            Updated: 2014/11/02
  \copyright	Copyright (C) 2013  Christian Floisand
  
  This program is free software: you can redistribute it and/or modify
@@ -41,7 +41,7 @@ extern NSString *const CFDropFrameFormatString;
 
 @interface CFSmpteFormatter : NSFormatter
 
-/*! @brief Specifies whether formatting should be for non-drop-frame or drop-frame frame rates.
+/*! @brief Specifies whether formatting should be for non drop-frame or drop-frame frame rates.
     @details Default is non-drop-frame. */
 @property (nonatomic) CFSmpteMode smpteMode;
 

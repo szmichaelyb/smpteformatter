@@ -9,7 +9,7 @@
  \author	Christian Floisand
  \version	2.0
  \date		Created: 2013/05/19
-            Updated: 2014/08/11
+            Updated: 2014/11/02
  \copyright	Copyright (C) 2013  Christian Floisand
  
  This program is free software: you can redistribute it and/or modify
@@ -32,13 +32,11 @@
 
 NSString *const CFNonDropFrameFormatString = @"00:00:00:00";
 NSString *const CFDropFrameFormatString = @"00:00:00;00";
-NSString *const CFValidInput = @"0123456789:;";
+static NSString *const CFValidInput = @"0123456789:;";
 
 @interface CFSmpteFormatter ()
-{
-    NSMutableString *_formatString;
-    NSCharacterSet *_validCharacterSet;
-}
+@property (nonatomic, strong) NSMutableString *formatString;
+@property (nonatomic, strong) NSCharacterSet *validCharacterSet;
 @end
 
 @implementation CFSmpteFormatter
@@ -47,8 +45,7 @@ NSString *const CFValidInput = @"0123456789:;";
 {
     self = [super init];
     if (self) {
-        _formatString = [NSMutableString stringWithString:CFNonDropFrameFormatString];
-        _validCharacterSet = [NSCharacterSet characterSetWithCharactersInString:CFValidInput];
+        [self cf_commonInit];
     }
     return self;
 }
@@ -57,10 +54,15 @@ NSString *const CFValidInput = @"0123456789:;";
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        _formatString = [NSMutableString stringWithString:CFNonDropFrameFormatString];
-        _validCharacterSet = [NSCharacterSet characterSetWithCharactersInString:CFValidInput];
+        [self cf_commonInit];
     }
     return self;
+}
+
+- (void)cf_commonInit
+{
+    _formatString = [NSMutableString stringWithString:CFNonDropFrameFormatString];
+    _validCharacterSet = [NSCharacterSet characterSetWithCharactersInString:CFValidInput];
 }
 
 - (void)setSmpteMode:(CFSmpteMode)smpteMode
@@ -76,13 +78,14 @@ NSString *const CFValidInput = @"0123456789:;";
             break;
             
         default:
+            _formatString = nil;
             break;
     }
 }
 
 - (NSString*)stringForObjectValue:(id)obj
 {
-    if ( ! [obj isKindOfClass:[NSNumber class]] ) {
+    if ( ! [obj isKindOfClass:[NSNumber class]] || ! _formatString ) {
         return nil;
     }
     
@@ -103,17 +106,17 @@ NSString *const CFValidInput = @"0123456789:;";
         NSString *temp;
         
         while (length > 1) {
-            temp = [[obj stringValue] substringFromIndex:length-2];
+            temp = [[obj stringValue] substringFromIndex:(length - 2)];
             [returnString replaceCharactersInRange:NSMakeRange(insertLocation, 2) withString:temp];
             
-            obj = [NSNumber numberWithInt:[obj intValue]/100];
+            obj = [NSNumber numberWithInt:([obj intValue] / 100)];
             length -= 2;
             insertLocation -= 3;
         }
         
         // Handle remaining character if there is one.
         if (length == 1) {
-            [returnString replaceCharactersInRange:NSMakeRange(insertLocation+1, 1) withString:[obj stringValue]];
+            [returnString replaceCharactersInRange:NSMakeRange(insertLocation + 1, 1) withString:[obj stringValue]];
         }
     }
     
